@@ -1,8 +1,38 @@
+.loader {
+	margin: 0 auto;
+	width: 48px;
+	height: 48px;
+	border: 5px solid #080808;
+	border-bottom-color: transparent;
+	border-radius: 50%;
+	display: block;
+	box-sizing: border-box;
+	animation: rotation 1s linear infinite;
+	position: absolute;
+	top: calc(50% - 48px);
+	left: calc(50% - 48px);
+	z-index: 123;
+}
+
+.hidden {
+	display: none;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	position: relative;
 }
 
 .image-container {

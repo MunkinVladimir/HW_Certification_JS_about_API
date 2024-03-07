@@ -1,3 +1,11 @@
+window.addEventListener('load', function load() {
+	const content = document.querySelector('.container');
+	content.classList.remove('hidden');
+
+	const loader = document.querySelector('.loader');
+	loader.style.display = 'none';
+});
+
 const accessKey = 'f0yW89CgIZRr8Th4Zpfc8j5s_smJZCL4nESqxLc92J4';
 const imageElement = document.getElementById('image');
 const photographerElement = document.getElementById('photographer');
